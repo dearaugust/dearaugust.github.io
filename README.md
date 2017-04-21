@@ -1,6 +1,8 @@
 # dearaugust.github.io
 我的第一个Github项目
 
+- rm -r dearaugust.github.io -f (强制删除 -f)
+
 
 - git clone[url]
 - git status
