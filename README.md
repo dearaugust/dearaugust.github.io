@@ -16,5 +16,9 @@
 ## Atom packages (apm install)
 - emmet
 - open-in-browser  (右键浏览器打开)
-- autocomplete-paths  (自动补齐路径)s
-- language-babel   (支持ES6语法)
+- autocomplete-paths  (自动补齐路径)
+- language-babel  (支持ES6语法)
+- highlight-line  (高亮)
+- highlight-selected （高亮 选择）
+- file-icons  (图标)
+- activate-power-mode (敲击效果)
