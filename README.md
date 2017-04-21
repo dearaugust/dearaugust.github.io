@@ -12,6 +12,7 @@
 - git commit -m'messagr'
 - git push (上推)
 - git pull (下拉)
+111111
 
 ## Atom packages (apm install)
 - emmet
