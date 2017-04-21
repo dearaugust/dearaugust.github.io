@@ -9,10 +9,9 @@
 
 ##修改有上传更新
 - git add .
-- git commit -m'messagr'
+- git commit -m'messagr' (做版本 ‘版本说明’)
 - git push (上推)
 - git pull (下拉)
-111111
 
 ## Atom packages (apm install)
 - emmet
