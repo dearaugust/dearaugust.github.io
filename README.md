@@ -3,7 +3,6 @@
 
 - rm -r dearaugust.github.io -f (强制删除 -f)
 
-
 - git clone[url]
 - git status
 - git log
@@ -11,7 +10,8 @@
 ##修改有上传更新
 - git add .
 - git commit -m'messagr'
-- git push
+- git push (上推)
+- git pull (下拉)
 
 ## Atom packages (apm install)
 - emmet
