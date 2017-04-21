@@ -22,3 +22,6 @@
 - highlight-selected （高亮 选择）
 - file-icons  (图标)
 - activate-power-mode (敲击效果)
+
+##创建仓库  
+- git init (把初始化仓库创建成一个git仓库)
