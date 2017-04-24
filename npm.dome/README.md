@@ -13,4 +13,36 @@ npm init
 npm install [packagename] [--save]
 //安装到了node modules
 --save:记录到dependencies字段下
---save-dev:记录
+--save-dev:记录到devDependencies字段下
+--global:缩写为 -g   ,(安装到用户主目录系统下,可以在任何位置安装)
+```
+
+##卸载模块
+```bash
+  npm uninstall [packagename] [-g]
+```
+
+###引入第三方模块的时候,直接require包的名称
+```js
+//var $ = require('jquery'); //引入第三方模块的时候,直接require包的名称
+
+//console.log($);
+```
+```js
+function sayname(name){
+  console.log(name)
+}
+module.exports = sayname;
+```
+
+###/引入自己写的js需要加./路径名
+```js
+var aaa = require('./index.js'); //引入自己写的js需要加./路径名
+
+console.log(aaa);
+
+aaa('小门')
+```
+
+##执行
+- npm run [name] (执行自定义命令)
