@@ -16,11 +16,11 @@
   console.log('aaa')
   (块标签)
 </pre>
-我是个`window`变量
+我是个 `window` 变量
 
 这样可以**加粗** 字体
 
-这样可以 ** *倾斜* ** 字体
+这样可以 *倾斜* 字体
 
 [内容来自百度](https://www.baidu.com) (a标签)
 
