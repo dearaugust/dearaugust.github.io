@@ -1,13 +1,13 @@
-import React from 'react';
-import img from './img.jpg';
+import React from 'react' ;
 
-function Main(){
-  return(
-    <div>
-      <h1>内容function方法</h1>
-      <img src = {img} />
-    </div>
-  )
-}
+class Main extends React.Component {
+  render(){
+    return(
+      <div>
+        main
+      </div>
+    )
+  }
+};
 
-export default Main;
+export default Main ;

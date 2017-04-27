@@ -4,10 +4,10 @@ class Header extends React.Component {
   render(){
     return(
       <div>
-        <h1>I am a 头部</h1>
+        header
       </div>
     )
   }
-}
+};
 
-export default Header;
+export default Header ;
