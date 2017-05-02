@@ -12,3 +12,47 @@
   display: block;
   content: ' ';
 }
+
+.play{
+  height: 100vh;
+  widows: 100vw;
+  /*width: 50vw;*/   /* 显示器可视宽度 vw */
+  background:lightgreen;
+  display: flex;   /*弹性盒子*/
+  align-items: center;   /*弹性盒子 垂直居中*/
+  text-align: center;
+  position: relative;
+}
+.play>div{
+  flex-grow: 1;   /*弹性盒子*/
+}
+.play button{
+  position: relative;
+  z-index: auto;
+}
+.play p{
+  position: absolute;
+}
+
+#header{
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 0;
+}
+#header p{
+  font-size: 30px;
+  color:#ccc;
+}
+#header div{
+  float: left;
+}
+#header ul{
+  list-style: none;
+}
+#header li{
+  float: right;
+  padding:10px;
+}
+#header a{
+  text-decoration: none;
+}

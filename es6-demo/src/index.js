@@ -135,7 +135,7 @@ document.body.innerHTML = '<h1 style="text-align:center;color:teal;font-size:100
 
 // -----------------------------------------------------------------------//
 //##箭头函数
-let aa = (nn,bb) => nn * bb + 2; //传1个'参数'可以省略(),没有'参数'或多个'参数'必须有();
+let aa = (nn,bb) => nn * bb + 2; //传1个'参数'可以省略(),没有'参数'或多个'参数'必须有(); 箭头函数指向window
 // aa:函数名  ():参数  =>:函数体
   // function aa(nn,bb){
   //   return 38;

@@ -92,3 +92,7 @@
 - nvm alias default node版本号 (设置默认node版本)
 ### 卸载node.js
 - nvm uninstall node版本号 (卸载node版本)
+
+
+## 创建react项目
+- creat-react-app react-props

@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './main.css'
 import App from './app.js'
 
-ReactDOM.render(<App/>,document.querySelector('#root'))
+class Hello extends React.Component {
+  render(){
+    return(
+      <div>
+        <App></App>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render( <Hello />,document.querySelector('#root'))
