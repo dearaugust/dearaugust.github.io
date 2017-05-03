@@ -95,4 +95,4 @@
 
 
 ## 创建react项目
-- creat-react-app react-props
+- create-react-app react-props
