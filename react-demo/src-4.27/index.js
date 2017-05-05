@@ -54,16 +54,20 @@ ReactDOM.render(hello,document.getElementById('root'));
 //     </div>
 //   )
 // }
-// function Dier() {
+// function Dier({title,age}) {
 //   let a = 888; //可以嵌入变量
 //   return(
 //     <div>
+    // {title}
+    // <br/>
+    // {age}
 //       <World></World>
 //       <h1>第二种组件的创建方式,必须有返回值,'{a}'而且返回值必须是JSX elements</h1>
 //     </div>
 //   )
 // }
-// ReactDOM.render(<Dier/>,document.querySelector('#root'));
+// ReactDOM.render(<Dier title='august' age={160819} />,document.querySelector('#root'));
+//
 // 3.----------------------------------
 // class Disan extends React.Component {
 //   render(){
@@ -78,7 +82,7 @@ ReactDOM.render(hello,document.getElementById('root'));
 
 //## React组件 (3种方法)
 // 1. React.createClass ;当做自定义标签用,首字母必须大写
-// 2. function Name() {} ;Name是名称
+// 2. function Name() {} ;Name是名称   //不用生命周期函数等才用function方法 //默认接收 props 参数
 // 3. class Name extends React.Component { } ;
 
 import App from './app.js';

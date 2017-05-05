@@ -1,0 +1,6 @@
+body {
+
+}
+.table-bordered td{
+  border:1px solid #ccc;
+}
