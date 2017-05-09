@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App.js';
+import App from './App';
 
 // function App({title,age}){
 //   // console.log(props);
@@ -15,6 +15,6 @@ import App from './App.js';
 // }
 
 ReactDOM.render(
-  <App/>,
+  <App title='august' age={160819} />,
   document.getElementById('root')
 );

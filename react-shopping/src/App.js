@@ -1,31 +1,19 @@
-import React from 'react';
-
-import Form from './Form.js';
-import Table from './Table.js'
-
-class App extends React.Component {
-  // let styles = {
-  //
-  // }
-  constructor(){
-    super();
-    // this.state={
-    //   name:'javascript',
-    //   one:'12',
-    //   number:'1',
-    //   sub:'12'
-    // }
-  }
-  render() {
-    console.log(this.data);
-    return (
-      <div>
-        <Table ref={table => this.table = table}/>
-        <h4>总价钱:</h4>
-        <Form ref={form => this.form = form} />
-      </div>
-    );
-  }
-}
-
-export default App;
+import React from 'react'
+import Button from './button.js'
+import Top from './Top.js'
+export default class App extends React.Component{
+    handleClick(){
+        console.log(this.button.state);
+        this.top.change(this.button.state);
+        this.button.reset();
+    }
+     render(){
+         return(
+             <div>
+                <Top ref={top=>this.top=top}></Top>
+                <Button ref={button=>this.button=button}></Button>
+                <button className='btn btn-success' onClick={this.handleClick.bind(this)}>提交</button>
+             </div>
+         )
+     }
+ }
