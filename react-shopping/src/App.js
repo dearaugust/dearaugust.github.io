@@ -1,38 +1,28 @@
 import React from 'react';
 
+import Form from './Form.js';
+import Table from './Table.js'
+
 class App extends React.Component {
   // let styles = {
   //
   // }
+  constructor(){
+    super();
+    // this.state={
+    //   name:'javascript',
+    //   one:'12',
+    //   number:'1',
+    //   sub:'12'
+    // }
+  }
   render() {
+    console.log(this.data);
     return (
       <div>
-        <table className="table table-bordered table-hover">
-          <tr>
-            <td>名称</td>
-            <td>单价</td>
-            <td>数量</td>
-            <td>小计</td>
-            <td>操作</td>
-          </tr>
-          <tr>
-            <td>名称</td>
-            <td>单价</td>
-            <td>数量</td>
-            <td>小计</td>
-            <td>操作</td>
-          </tr>
-
-        </table>
-        <form>
-          <p>书名</p>
-          <input className='form-control' type='text'></input>
-          <p>数量</p>
-          <input className='form-control' type='number'></input>
-          <p>单价</p>
-          <input className='form-control' type='number'></input>
-          <button className='btn btn-default'>添加</button>
-        </form>
+        <Table ref={table => this.table = table}/>
+        <h4>总价钱:</h4>
+        <Form ref={form => this.form = form} />
       </div>
     );
   }
