@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App.js';
+import TodoList from './Todolist.js'
 
 // function App({title,age}){
 //   // console.log(props);
@@ -15,6 +16,6 @@ import App from './App.js';
 // }
 
 ReactDOM.render(
-  <App/>,
+  <TodoList/>,
   document.getElementById('root')
 );
