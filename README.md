@@ -79,6 +79,7 @@
 - git init (把初始化仓库创建成一个git仓库)
 - .gitignore (创建.gitignone文件,忽略不上传的文件)(提前写好)
 - git remote add
+- git push -u origin master
 
 ## 安装node.js   (版本号 v7.9.0)
 - github 搜索 nvm 安装

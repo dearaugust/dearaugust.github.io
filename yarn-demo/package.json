@@ -1,0 +1,14 @@
+{
+  "name": "yarn-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -v"
+  },
+  "main": "index.js",
+  "author": "dearaugust",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "react": "^15.5.4"
+  }
+}
