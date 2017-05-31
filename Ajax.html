@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajax</title>
+</head>
+<body>
+  <div id="box">
+
+  </div>
+  <!-- <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
+  <script>
+    fetch('https://api.github.com/users/dearaugust')
+    .then(function(response){
+      return response.json()
+    }).then(function(data){
+      console.log(data);
+    }).catch( err => alert(err))
+    function myfetch(){
+      return new Promise(function(resolve, reject){
+        console.log('Run!');
+        setTimeout(function(){
+          reject(212412)
+        },2000)
+      });
+    }
+    myfetch().then(function(num){
+      console.log('thing.then()...',num);
+    }).catch(function(){
+      console.log('thing.catch()...');
+    })
+
+  //jquery方法: -----------------//
+    // $.ajax({
+    //   // type:'GET'
+    //   method: 'POST',
+    //   // dataType: 'json', //期望后台返回的数据类型
+    //   contentType: 'application/json', //发往后台的数据类型
+    //   url:'https://api.douban.com/v2/book/1220562',
+    //   dataType:'jsonp',
+    //   jsonp:'callblack'
+    //   // data: JSON.stringify({accesstoken:'3f77acb1-d753-4393-b784-44913190e6a8'})
+    // }).done(function (data) {
+    //   console.log(data);
+    // }).fail(function (err) {
+    //   console.log(err);
+    // }).always(function (){
+    //   console.log('ajax');
+    // })
+
+  //原生方法: -----------------//
+    // var xml = new XMLHttpRequest();
+    // xml.onreadystatechange=function(){
+    //   console.log(xml.readyState);
+    //   if(xml.readyState==4 && xml.status==200){
+    //     console.log('JSON=======',xml.responseText); //获得字符串形式的响应数据。
+    //     let data = JSON.parse(xml.responseText); //解析JSON
+    //     console.log('obj=====',data);
+    //     box.innerText = data.login;
+    //   }
+    // }
+    // xml.open('POST','https://cnodejs.org/api/v1/accesstoken',true); //规定请求的类型、URL 以及是否异步处理请求。
+    // xml.setRequestHeader("Content-type","application/json");
+    // let data = {
+    //   accesstoken: '3f77acb1-d753-4393-b784-44913190e6a8'
+    // }
+    // xml.send(JSON.stringify(data)); //将请求发送到服务器。
+  </script>
+</body>
+</html>

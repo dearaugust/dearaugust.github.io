@@ -16,6 +16,6 @@ import TodoList from './Todolist.js'
 // }
 
 ReactDOM.render(
-  <TodoList/>,
+  <App/>,
   document.getElementById('root')
 );

@@ -68,7 +68,7 @@ class App extends React.Component {
       this.state.filter === 'ACTIVE' ?
       this.state.data.filter(item => !item.completed) :
       this.state.data.filter(item => item.completed)
-      //判断是不是'ALL' 是(true)就执行; 是(false)就判断是不是'ACTIVE' 是就执行非'删除线',不是就执行'删除线'
+      //判断是不是'ALL' 是(true)就执行; 是(false)就判断是不是'ACTIVE' 是就执行'非删除线',不是就执行'删除线'
     return(
       <div className="container">
         <h1 className="text-center">TODO</h1>
