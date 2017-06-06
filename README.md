@@ -64,7 +64,7 @@
 - git push (上推,把本地上传到github)
 - git pull (下拉,把github下载到本地)
 
-## Atom packages (apm install)
+## Atom packages (apm install atom)
 - emmet
 - open-in-browser  (右键浏览器打开)
 - autocomplete-paths  (自动补齐路径)
@@ -74,7 +74,28 @@
 - file-icons  (图标)
 - activate-power-mode (敲击效果)
 - Atom Material ui (主题)
+- 找到autusave插件设置失去焦点自动保存
+- ctrl+shift+p 找到 snippets 添加代码片段
+```
+'.source.js':
+  'reactClass':
+     'prefix': '!'
+     'body': """
+        import React, { Component } from 'react'
 
+        class ${1:Name} extends Component {
+          render(){
+            return(
+              <div>
+                ${1:Name}
+              </div>
+            )
+          }
+        }
+
+        export default ${1:Name}
+     """
+```
 ## 创建仓库  
 - git init (把初始化仓库创建成一个git仓库)
 - .gitignore (创建.gitignone文件,忽略不上传的文件)(提前写好)
