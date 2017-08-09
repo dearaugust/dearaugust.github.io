@@ -74,6 +74,8 @@
 - file-icons  (图标)
 - activate-power-mode (敲击效果)
 - Atom Material ui (主题)
+- Advanced Open File (创建新文件)
+- language-vue Atom开发Vue需要装包
 - 找到autusave插件设置失去焦点自动保存
 - ctrl+shift+p 找到 snippets 添加代码片段
 ```
